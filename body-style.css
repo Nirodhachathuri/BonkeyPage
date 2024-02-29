@@ -1,0 +1,1041 @@
+/*================== About Start ======================*/
+.about {
+    padding: 100px 0 80px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 50%;
+}
+
+.about-head-area {
+    text-align: center;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.about-head-area h2 {
+    font-size: 48px;
+    line-height: normal;
+    position: relative;
+    z-index: 9;
+}
+
+.about-head-area p {
+    line-height: 200%;
+    position: relative;
+    z-index: 9;
+}
+
+.overlay-text {
+    font-size: 124px;
+    font-weight: 400;
+    line-height: 120px;
+    font-family: var(--supercomic);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(43 43 43 / 45%);
+    color: transparent;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+}
+
+.overlay-text span {
+    animation: bounce 1s infinite;
+    display: inline-block;
+}
+
+.overlay-text span:nth-child(2) {
+    animation-delay: .05s;
+}
+
+.overlay-text span:nth-child(3) {
+    animation-delay: .1s;
+}
+
+.overlay-text span:nth-child(4) {
+    animation-delay: .15s;
+}
+
+.overlay-text span:nth-child(5) {
+    animation-delay: .2s;
+}
+
+.overlay-text span:nth-child(6) {
+    animation-delay: .25s;
+}
+
+.overlay-text span:nth-child(7) {
+    animation-delay: .3s;
+}
+
+.overlay-text span:nth-child(8) {
+    animation-delay: .35s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: rotateX(20deg) translateY(2px) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(3deg) scale(1.02);
+    }
+}
+
+body.dark-mode .overlay-text {
+    -webkit-text-stroke-color: #EF922078;
+}
+
+.mission-left {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    text-align: center;
+    position: relative;
+}
+
+.mission-heart {
+    position: absolute;
+    right: 75px;
+    top: 50px;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
+.mission-right h2,
+.what-make-unique-left h2 {
+    font-size: 36px;
+    line-height: 159%;
+    margin-bottom: 12px;
+}
+
+.mission-right h2 span,
+.what-make-unique-left h2 span {
+    color: #FCAB05;
+    text-shadow: 3px 0 #252525;
+    animation: textglow 2000ms linear infinite 2000ms;
+}
+
+@keyframes textglow {
+    40% {
+        text-shadow: 0 0 0 #fff;
+        color: #FF7DBB;
+    }
+}
+
+body.dark-mode .mission-right h2 span,
+body.dark-mode .what-make-unique-left h2 span {
+    text-shadow: 3px 0 #ffffff;
+}
+
+.mission-right p,
+.what-make-unique-left p {
+    line-height: 168.75%;
+    margin-bottom: 33px;
+}
+
+.mission-right p:last-child,
+.what-make-unique-left p:last-child {
+    margin-bottom: 0;
+}
+
+.what-make-unique-area {
+    margin-top: 50px;
+}
+
+.what-make-unique-right {
+    text-align: center;
+}
+
+
+body svg path.custom-shadow {
+    fill: rgba(45, 34, 70, 0.10);
+}
+
+body.dark-mode svg path.custom-shadow {
+    fill: #2D2246;
+}
+
+/*================== About End ======================*/
+
+
+/*================== Tokenomics-chart-roadmap Start ======================*/
+.tokenomics-chart-roadmap {
+    padding: 70px 0 18px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100%;
+    position: relative;
+}
+
+.tokenomics-chart-area h2 {
+    text-align: center;
+    font-size: 48px;
+    line-height: normal;
+    position: relative;
+    z-index: 9;
+    color: #FFF;
+    text-shadow: 4px 0 #252525;
+    animation: textglow2 2000ms linear infinite 2000ms;
+}
+
+body.dark-mode .tokenomics-chart-area h2 {
+    text-shadow: 4px 0 #a783f3;
+}
+
+.chart-img {
+    text-align: center;
+    margin-top: 43px;
+    position: relative;
+    z-index: 9;
+}
+
+.chart-img img {
+    margin: 0 auto;
+}
+
+.chart-counting {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    background: url(images/chart-line.svg) no-repeat bottom center;
+    background-size: 100%;
+    padding-bottom: 37px;
+    margin-top: 48px;
+}
+
+.chart-count-item h4 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 168.75%;
+    margin-bottom: 0;
+}
+
+.chart-count-item p {
+    font-size: 18px;
+    line-height: 130.75%;
+}
+
+.chart-count-item p:last-child {
+    margin-bottom: 0;
+}
+
+.floating-cloud1 {
+    position: absolute;
+    left: 50px;
+    top: 320px;
+    -webkit-animation: 13s floatcloud1 infinite;
+    animation: 13s floatcloud1 infinite;
+}
+
+@-webkit-keyframes floatcloud1 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(3rem) translateY(1rem);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.floating-cloud2 {
+    position: absolute;
+    right: 10px;
+    top: 110px;
+    -webkit-animation: 15s floatcloud2 infinite;
+    animation: 15s floatcloud2 infinite;
+}
+
+@-webkit-keyframes floatcloud2 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-4rem) translateY(1rem);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.roadmap-area {
+    padding-top: 100px;
+}
+
+.roadmap-area h2 {
+    color: #252525;
+    font-size: 48px;
+    line-height: normal;
+    text-shadow: 4px 0 #B57900;
+    animation: textglow2 2000ms linear infinite 2000ms;
+}
+
+@keyframes textglow2 {
+    40% {
+        text-shadow: 0 0 0 #fff;
+    }
+}
+
+body.dark-mode .roadmap-area h2 {
+    color: #FDAC05;
+    text-shadow: 4px 0 #ffffff;
+}
+
+.custom-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.custom-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-top: var(--bs-gutter-y);
+}
+
+.custom-grid {
+    width: 20%;
+    flex: 0 0 auto;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-part,
+.custom-grid:nth-child(even) .road-phase-head-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-part {
+    margin-top: 15px;
+}
+
+.roadmap-heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.road-btn-group .btn-skew1 {
+    clip-path: polygon(6% 18%, 90% 5%, 90% 90%, 0% 90%);
+    margin-left: 8px;
+}
+
+.road-phase-area {
+    position: relative;
+    max-width: 1004px;
+    margin: 0 auto;
+}
+
+.road-phase-area:after {
+    content: '';
+    position: absolute;
+    left: -70px;
+    top: 43%;
+    transform: translateY(-50%);
+    background: url(images/wave-img.svg) no-repeat center;
+    background-size: cover;
+    width: 1160px;
+    height: 94px;
+}
+
+.road-each-phase-heading {
+    min-height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #F9D609;
+    position: relative;
+    border-radius: 18px;
+    max-width: 173px;
+    margin: 0 auto;
+    z-index: 9;
+    width: 100%;
+    padding: 5px;
+}
+
+.custom-grid:nth-child(2) .road-each-phase-heading,
+.custom-grid:nth-child(5) .road-each-phase-heading {
+    background: #EE9221;
+}
+
+.custom-grid:nth-child(3) .road-each-phase-heading {
+    background: linear-gradient(90deg, #73B24F 1%, #8EBB47 37%, #A5C340 76%, #ADC63E 100%);
+}
+
+.road-each-phase-heading h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-heading h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.road-each-phase-heading:before {
+    content: '';
+    width: 7px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    background: #FFC303;
+    border-radius: 40px 40px 0 0;
+    left: 20px;
+}
+
+.road-each-phase-heading:after {
+    content: '';
+    width: 7px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    background: #FFC303;
+    border-radius: 40px 40px 0 0;
+    right: 20px;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-heading:before,
+.custom-grid:nth-child(even) .road-each-phase-heading:after {
+    top: auto;
+    bottom: -10px;
+    border-radius: 0 0 40px 40px;
+}
+
+.custom-grid:nth-child(2) .road-each-phase-heading:before,
+.custom-grid:nth-child(2) .road-each-phase-heading:after,
+.custom-grid:nth-child(5) .road-each-phase-heading:before,
+.custom-grid:nth-child(5) .road-each-phase-heading:after {
+    background: #EE9221;
+}
+
+.custom-grid:nth-child(3) .road-each-phase-heading:before,
+.custom-grid:nth-child(3) .road-each-phase-heading:after {
+    background: #619344;
+}
+
+.road-phase-body-wrap {
+    min-height: 282px;
+    font-size: 14px;
+}
+
+.road-phase-body-wrap .static-check {
+    position: relative;
+}
+
+.road-phase-body-wrap .static-check+.static-check {
+    margin-top: 18px;
+}
+
+.custom-check-box {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    background-color: #3F335B;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.custom-check-box.customchecked {
+    background-image: url(images/check-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.custom-check-label {
+    padding-left: 20px;
+}
+
+.custom-grid:nth-child(odd) .road-phase-body-wrap {
+    margin-top: 120px;
+}
+
+.phase-shape {
+    position: absolute;
+    top: -10px;
+    font-size: 16px;
+    background: #fff;
+    min-width: 119px;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 8px;
+    color: #FFC303;
+    font-weight: 700;
+}
+
+.custom-grid:nth-child(even) .phase-shape {
+    top: auto;
+    bottom: -10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.custom-grid:nth-child(2) .phase-shape,
+.custom-grid:nth-child(5) .phase-shape {
+    color: #9D4D05;
+}
+
+.custom-grid:nth-child(3) .phase-shape {
+    color: #74B24F;
+}
+
+
+.road-each-phase-heading-img {
+    position: relative;
+}
+
+.road-each-phase-heading-img:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -28px;
+    background: url(images/tri-shape1.svg) no-repeat center;
+    width: 31px;
+    height: 27px;
+    margin: 0 auto;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-heading-img:before {
+    bottom: -5px;
+    top: auto;
+}
+
+.custom-grid:nth-child(2) .road-each-phase-heading-img:before {
+    background: url(images/tri-shape2.svg) no-repeat center;
+}
+
+.custom-grid:nth-child(3) .road-each-phase-heading-img:before {
+    background: url(images/tri-shape3.svg) no-repeat center;
+}
+
+.custom-grid:nth-child(4) .road-each-phase-heading-img:before {
+    background: url(images/tri-shape4.svg) no-repeat center;
+}
+
+.custom-grid:nth-child(5) .road-each-phase-heading-img:before {
+    background: url(images/tri-shape2.svg) no-repeat center;
+    transform: rotate(180deg);
+}
+
+.road-each-phase-heading-img img {
+    margin: 24px auto 0 auto;
+}
+
+.custom-grid:nth-child(even) .road-each-phase-heading-img img {
+    margin: 0 auto 24px auto;
+}
+
+/*================== Tokenomics-chart-roadmap End ======================*/
+
+
+/*================== Footer Start ======================*/
+footer.main_footer {
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+
+.footer-up {
+    padding: 55px 0 42px;
+    background: url(images/chart-line.svg) no-repeat center bottom;
+    background-size: 100%;
+}
+
+body.dark-mode .footer-logo svg g.st11 path.st12 {
+    fill: #EE9221;
+}
+
+.footer-up h3 {
+    font-size: 22px;
+    line-height: 159%;
+    margin-bottom: 15px;
+}
+
+.footer-logo svg {
+    max-width: 182px;
+}
+
+.footer-social-icons {
+    margin-top: 25px;
+}
+
+.footer-social-icons ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social-icons ul li {
+    display: inline-block;
+}
+
+.footer-social-icons ul li+li {
+    margin-left: 25px;
+}
+
+.footer-social-icons ul li svg {
+    transform: scale(1);
+    transition: all ease-in-out 0.5s;
+}
+
+.footer-social-icons ul li svg:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+}
+
+body.dark-mode .footer-social-icons ul li svg path.icon-background,
+body.dark-mode .footer-social-icons ul li svg path.icon-color2 {
+    fill: #f7a805;
+}
+
+body.dark-mode .footer-social-icons ul li svg path.icon-color {
+    fill: #251C38;
+}
+
+.footer-btn-group a {
+    display: table;
+    margin: 0 auto;
+}
+
+.footer-btn-group .btn-skew1 {
+    clip-path: polygon(6% 18%, 90% 5%, 90% 90%, 0% 90%);
+}
+
+body.dark-mode .footer-btn-group .btn-warning-solid {
+    background-color: #FCAB05;
+    border-color: #FCAB05;
+}
+
+body.dark-mode .footer-btn-group .btn-warning-solid:hover {
+    background-color: #FF7DBB;
+    border-color: #FF7DBB;
+}
+
+.footer-part p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 186%;
+}
+
+.footer-dwn {
+    padding: 15px 0;
+}
+
+.footer-dwn h3 {
+    margin: 0;
+    font-size: 13px;
+    line-height: 159%;
+}
+
+.footer-top-show {
+    position: fixed;
+    right: 40px;
+    bottom: 45px;
+    z-index: 9;
+    display: none;
+    cursor: pointer;
+}
+
+.top-scroll-arrow {
+    position: absolute;
+    right: -40px;
+    animation: floatingtoparrow 3s infinite;
+}
+
+@keyframes floatingtoparrow {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/*================== Footer End ======================*/
+
+/*====================================================== Responsive =========================*/
+@media only screen and (max-width:1400.98px) {
+    .chart-counting {
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width:1199.98px) {
+    .mission-left {
+        background-size: contain;
+        ;
+    }
+
+    .road-phase-area:after {
+        left: 0;
+        background-size: 100%;
+        width: 100%;
+    }
+
+    .mission-heart {
+        right: 10px;
+    }
+
+    .chart-count-item h4 {
+        font-size: 20px;
+    }
+
+    .chart-count-item p {
+        font-size: 14px;
+    }
+
+    .chart-counting {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width:1080.98px) {
+
+    .about-head-area h2,
+    .tokenomics-chart-area h2 {
+        font-size: 36px;
+    }
+
+    .overlay-text {
+        font-size: 100px;
+        line-height: 106px;
+    }
+}
+
+@media only screen and (max-width:991.98px) {
+    .about {
+        padding: 70px 0 60px;
+    }
+
+    .mission-right h2,
+    .what-make-unique-left h2,
+    .roadmap-area h2 {
+        font-size: 36px;
+    }
+
+    .tokenomics-chart-roadmap {
+        padding: 60px 0 18px;
+    }
+
+    .roadmap-area {
+        padding-top: 60px;
+    }
+
+    .road-each-phase-heading h3 {
+        font-size: 18px;
+    }
+
+    .road-phase-body-wrap {
+        font-size: 13px;
+    }
+
+    .phase-shape {
+        font-size: 13px;
+        min-width: 97px;
+    }
+
+    .road-phase-area {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .floating-cloud1 {
+        max-width: 180px;
+        left: 0;
+    }
+
+    .floating-cloud2 {
+        max-width: 250px;
+    }
+
+    .chart-count-item h4 {
+        font-size: 18px;
+    }
+
+    .footer-up {
+        padding: 40px 0;
+    }
+
+    .footer-up h3 {
+        font-size: 17px;
+    }
+
+    .footer-social-icons ul li+li {
+        margin-left: 2px;
+    }
+
+    .footer-top-show {
+        max-width: 120px;
+    }
+
+    .top-scroll-arrow {
+        right: -35px;
+        max-width: 48px;
+    }
+}
+
+@media only screen and (max-width:840.98px) {
+
+    .about-head-area h2,
+    .tokenomics-chart-area h2,
+    .mission-right h2,
+    .what-make-unique-left h2,
+    .roadmap-area h2 {
+        font-size: 28px;
+    }
+
+    .about-head-area p,
+    .mission-right p,
+    .what-make-unique-left p {
+        font-size: 14px;
+    }
+
+    .overlay-text {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .road-phase-area {
+        max-width: 700px;
+    }
+
+    .phase-shape {
+        min-width: 77px;
+    }
+
+    .road-phase-body-wrap .static-check+.static-check {
+        margin-top: 12px;
+    }
+
+    .road-each-phase-heading h3 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+}
+
+@media only screen and (max-width:767.98px) {
+    .custom-row {
+        justify-content: center;
+    }
+
+    .custom-grid {
+        width: 50%;
+    }
+
+    .road-phase-area:after {
+        display: none;
+    }
+
+    .custom-grid:nth-child(odd) .road-phase-body-wrap {
+        margin-top: 40px;
+    }
+
+    .road-phase-body-wrap {
+        min-height: auto;
+        max-width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .road-each-phase-part {
+        margin: 30px 0 !important;
+    }
+
+    .phase-shape {
+        min-width: 120px;
+    }
+
+    .roadmap-area {
+        padding-top: 40px;
+    }
+
+    .mission-left,
+    .what-make-unique-right {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .mission-heart {
+        max-width: 48px;
+    }
+
+    .mission-right,
+    .what-make-unique-left {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .chart-counting {
+        display: block;
+        overflow: hidden;
+    }
+
+    .chart-count-item {
+        width: 25%;
+        float: left;
+        margin: 15px 0;
+        padding: 0 10px;
+        min-height: 73px;
+    }
+
+    .floating-cloud1 {
+        top: 200px;
+    }
+
+    .tokenomics-chart-roadmap {
+        padding: 40px 0 18px;
+    }
+
+    .footer-up {
+        padding: 25px 0;
+    }
+
+    .footer-part {
+        margin: 15px 0;
+    }
+
+}
+
+@media only screen and (max-width:680.98px) {
+    .roadmap-heading-wrapper {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:575.98px) {
+
+    .about-head-area h2,
+    .tokenomics-chart-area h2,
+    .mission-right h2,
+    .what-make-unique-left h2,
+    .roadmap-area h2 {
+        font-size: 24px;
+    }
+
+    .overlay-text {
+        font-size: 48px;
+        line-height: normal;
+    }
+
+    .mission-left,
+    .what-make-unique-right {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .floating-cloud1 {
+        max-width: 125px;
+        top: 150px;
+    }
+
+    .floating-cloud2 {
+        max-width: 150px;
+    }
+
+    @-webkit-keyframes floatcloud1 {
+        0% {
+            transform: translateX(0) translateY(0);
+        }
+
+        50% {
+            transform: translateX(2rem) translateY(1rem);
+        }
+
+        100% {
+            transform: translateX(0) translateY(0);
+        }
+    }
+
+    @-webkit-keyframes floatcloud2 {
+        0% {
+            transform: translateX(0) translateY(0);
+        }
+
+        50% {
+            transform: translateX(-2rem) translateY(1rem);
+        }
+
+        100% {
+            transform: translateX(0) translateY(0);
+        }
+    }
+
+    .roadmap-heading-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .footer-top-show {
+        max-width: 70px;
+        right: 25px;
+        bottom: 25px;
+    }
+
+    .top-scroll-arrow {
+        right: -25px;
+        max-width: 38px;
+        top: -20px;
+    }
+}
+
+@media only screen and (max-width:420.98px) {
+    .chart-count-item {
+        width: 50%;
+    }
+
+    .overlay-text {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width:380.98px) {
+    .road-phase-area {
+        max-width: 290px;
+    }
+
+    .phase-shape {
+        min-width: 89px;
+    }
+}
